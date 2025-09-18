@@ -53,6 +53,51 @@
 
 
 
+	 <tr onmouseout="bog_stop()" onmouseover="bog_start()">
+      <td style="padding:20px;width:25%;vertical-align:middle">
+        <div class="one">
+          <div class="two" id='bog_image'><video  width=100% muted autoplay loop>
+          <source src="images/Chatbot_Arena_Model_ELO_Rankings.png" type="video/mp4">
+          Your browser does not support the video tag.
+          </video></div>
+          <img src='images/Chatbot_Arena_Model_ELO_Rankings.png' width=100%>
+        </div>
+        <script type="text/javascript">
+          function bog_start() {
+            document.getElementById('bog_image').style.opacity = "1";
+          }
+
+          function bog_stop() {
+            document.getElementById('bog_image').style.opacity = "0";
+          }
+          bog_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:75%;vertical-align:middle">
+        <a href="https://www.arxiv.org/abs/2509.11026">
+          <span class="papertitle">Rethinking Human Preference Evaluation of LLM Rationales
+</span>
+        </a>
+        <br>
+	      <a>Ziang Li</a>,
+				<a>Manasi Ganti</a>,
+				<a href="https://zixianma.github.io/">Zixian Ma</a>,
+		  <a href="https://helenavasc.com/">Helena Vasconcelos</a>,
+		  <strong>Qijia He</strong>,
+		  <a href="https://www.ranjaykrishna.com/index.html">Ranjay Krishna</a>
+		  		
+			
+        <br>
+        <em>XLLM-Reason-Plan Workshop @ COLM 2025</em>
+        <br>
+        <p>
+Large language models (LLMs) generate rationales that improve reasoning and interpretability, but existing evaluations using binary human or LLM preferences are limited and opaque. We introduce an attribute-based evaluation framework that defines key rationale qualities, explains human preferences, and enables more nuanced model comparisons through attribute-specific analysis.
+	</p>
+      </td>
+    </tr>
+			  
+
+
     <tr onmouseout="bog_stop()" onmouseover="bog_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
