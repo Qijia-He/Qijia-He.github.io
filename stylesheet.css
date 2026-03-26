@@ -93,7 +93,7 @@ h2 {
   margin: 0;
   font-weight: normal;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .papertitle {
@@ -103,21 +103,21 @@ h2 {
 }
 
 .name {
-  padding-top: 20px;
+  padding-top: 0;
   margin: 0;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 32px;
 }
 
 .one {
-  width: 160px;
-  height: 160px;
+  width: 220px;
+  height: 220px;
   position: relative;
 }
 
 .two {
-  width: 160px;
-  height: 160px;
+  width: 220px;
+  height: 220px;
   position: absolute;
   transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;

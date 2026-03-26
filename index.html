@@ -13,28 +13,25 @@
   </head>
 
   <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <table style="width:100%;max-width:1000px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <td style="padding:2.5%;width:25%;vertical-align:middle">
+                <img style="width:100%;display:block;border-radius:8px;object-fit:cover;" alt="profile photo" src="images/QijiaHe.jpg">
+              </td>
+              <td style="padding:2.5%;width:75%;vertical-align:top">
                 <p class="name" style="text-align: center;">
                   Qijia He
                 </p>
-                <p>I am a PhD candidate in the Department of Statistics at the <a href="https://stat.uw.edu/">University of Washington</a>, where I am co-advised by professor <a href="https://www.alexluedtke.com/">Alex Luedtke</a> and <a href="https://www.bozhangupenn.com/">Bo Zhang</a>. Previously, I received my MS degree in Statistics at the <a href="https://stat.uw.edu/">University of Washington</a> in 2023. Before graduate school, I obtained my BS degree in Statistics from <a href="https://www.sysu.edu.cn/sysuen/">Sun Yat-sen University</a> in 2021.
+                <p>I am a PhD student in the Department of Statistics at the <a href="https://stat.uw.edu/">University of Washington</a>, advised by Prof. <a href="https://www.bozhangupenn.com/">Bo Zhang</a>. I collaborate with Prof. <a href="https://www.ranjaykrishna.com/index.html">Ranjay Krishna</a> at the <a href="https://raivn.cs.washington.edu/">UW CSE RAIVN Lab</a> on multimodal AI research. Before graduate school, I received my B.S. in Statistics from <a href="https://www.sysu.edu.cn/sysuen/">Sun Yat-sen University</a>. I also have industry experience as an intern at Apple and TikTok.
                 </p>
-		 <p>       I have broad research interests spanning <strong>causal inference</strong>, <strong>machine learning</strong>, and <strong>multimodal large language models</strong>. My work includes projects on individualized optimal decision-making, variable importance for heterogeneous treatment effects, mediation analysis, and generalizability for <strong>causal inference</strong>, as well as recent contributions to <strong>LLM applications</strong>, such as multimodal figure-to-code generation and clustering with LLM-guided constraints during my internship.
+                <p>My research interests lie broadly in vision–language models and causal machine learning, with a focus on multimodal reasoning and generation, agentic AI systems, and causal machine learning.
                 </p>
 		      <p> Contact me: heqj3@uw.edu
 		      </p>
-                <p style="text-align:center">
-                  <a href="data/QijiaHe-bio.txt">Bio</a> &nbsp;/&nbsp;
-                  <a href="https://www.linkedin.com/in/qijia-he-23141a1a0/">LinkedIn</a>
-                </p>
-              </td>
-              <td style="padding:2.5%;width:40%;max-width:40%">
-                <a href="images/QijiaHe.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/QijiaHe.jpg" class="hoverZoomLink"></a>
+
               </td>
             </tr>
           </tbody></table>
@@ -54,32 +51,45 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
-
-	 <tr onmouseout="bog_stop()" onmouseover="bog_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='bog_image'><video  width=100% muted autoplay loop>
-          <source src="images/Chatbot_Arena_Model_ELO_Rankings.png" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/Chatbot_Arena_Model_ELO_Rankings.png' width=100%>
-        </div>
-        <script type="text/javascript">
-          function bog_start() {
-            document.getElementById('bog_image').style.opacity = "1";
-          }
-
-          function bog_stop() {
-            document.getElementById('bog_image').style.opacity = "0";
-          }
-          bog_stop()
-        </script>
+    <tr>
+      <td colspan="2" style="padding:10px 20px 4px 20px;">
+        <h3 style="margin:0;font-size:19px;font-weight:600;color:#000;">LLM / VLM</h3>
       </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://www.arxiv.org/abs/2509.11026">
-          <span class="papertitle">Rethinking Human Preference Evaluation of LLM Rationales
-</span>
-        </a>
+    </tr>
+
+    <tr>
+      <td style="padding:20px;width:38%;vertical-align:middle">
+        <img src='images/teaser.png' width=100% style="border-radius:4px;">
+      </td>
+      <td style="padding:20px;width:62%;vertical-align:middle">
+        <span class="papertitle">VFIG: Vectorizing Complex Figures in SVG with Vision-Language Models</span>
+        <br>
+        <strong>Qijia He</strong>,
+        <a href="https://www.linkedin.com/in/xunmei-liu/">Xunmei Liu</a>,
+        <a href="https://www.linkedin.com/in/hammaad-memon/">Hammaad Memon</a>,
+        <a href="https://www.linkedin.com/in/li-ziang-134422392/">Ziang Li</a>,
+        <a href="https://zixianma.github.io">Zixian Ma</a>,
+        <a href="https://j-min.io/">Jaemin Cho</a>,
+        <a href="https://jason718.github.io/">Zhongzheng Ren</a>,
+        <a href="https://danweld.com/">Dan Weld</a>,
+        <a href="https://www.ranjaykrishna.com/index.html">Ranjay Krishna</a>
+        <br>
+        <em>arXiv, 2026</em>
+        <br>
+        <a href="https://arxiv.org/abs/2603.24575">pdf</a> / <a href="https://vfig-proj.github.io/">website</a> / <a href="https://github.com/RAIVNLab/VFig/tree/main">code</a>
+        <p>
+VFIG is the first large-scale ecosystem for scientific figure-to-SVG generation, introducing a 66K figure–SVG dataset, a new benchmark, and a family of VLMs trained with SFT+RL that achieve state-of-the-art open-source performance and parity with GPT-5.2.
+        </p>
+      </td>
+    </tr>
+
+
+	 <tr>
+      <td style="padding:20px;width:38%;vertical-align:middle">
+        <img src='images/Chatbot_Arena_Model_ELO_Rankings.png' width=100% style="border-radius:4px;">
+      </td>
+      <td style="padding:20px;width:62%;vertical-align:middle">
+        <span class="papertitle">Rethinking Human Preference Evaluation of LLM Rationales</span>
         <br>
 	      <a>Ziang Li</a>,
 				<a>Manasi Ganti</a>,
@@ -87,12 +97,11 @@
 		  <a href="https://helenavasc.com/">Helena Vasconcelos</a>,
 		  <strong>Qijia He</strong>,
 		  <a href="https://www.ranjaykrishna.com/index.html">Ranjay Krishna</a>
-		  		
-			
         <br>
         <em>XLLM-Reason-Plan @ COLM 2025</em>
 		<span style="color: red; font-weight: bold;"> — Best Paper Award (Honorable Mention)</span>
         <br>
+        <a href="https://www.arxiv.org/abs/2509.11026">pdf</a>
         <p>
 Large language models (LLMs) generate rationales that improve reasoning and interpretability, but existing evaluations using binary human or LLM preferences are limited and opaque. We introduce an attribute-based evaluation framework that defines key rationale qualities, explains human preferences, and enables more nuanced model comparisons through attribute-specific analysis.
 	</p>
@@ -101,41 +110,27 @@ Large language models (LLMs) generate rationales that improve reasoning and inte
 			  
 
 
-    <tr onmouseout="bog_stop()" onmouseover="bog_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='bog_image'><video  width=100% muted autoplay loop>
-          <source src="images/j_jci-2023-0020_fig_001.jpg" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/j_jci-2023-0020_fig_001.jpg' width=100%>
-        </div>
-        <script type="text/javascript">
-          function bog_start() {
-            document.getElementById('bog_image').style.opacity = "1";
-          }
-
-          function bog_stop() {
-            document.getElementById('bog_image').style.opacity = "0";
-          }
-          bog_stop()
-        </script>
+    <tr>
+      <td colspan="2" style="padding:30px 20px 4px 20px;">
+        <h3 style="margin:0;font-size:19px;font-weight:600;color:#000;">Causal Inference</h3>
       </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://www.degruyterbrill.com/document/doi/10.1515/jci-2023-0020/html?lang=en&srsltid=AfmBOoq6N0kCiMVuNKotXHLNw8oX9l5bqaSA0alHg_yHOxTApwG613Nd">
-          <span class="papertitle">Role of placebo samples in observational studies
-</span>
-        </a>
+    </tr>
+
+    <tr>
+      <td style="padding:20px;width:38%;vertical-align:middle">
+        <img src='images/j_jci-2023-0020_fig_001.jpg' width=100% style="border-radius:4px;">
+      </td>
+      <td style="padding:20px;width:62%;vertical-align:middle">
+        <span class="papertitle">Role of placebo samples in observational studies</span>
         <br>
 	      <a href="https://sites.google.com/view/tingye">Ting Ye</a>,
 				<strong>Qijia He</strong>,
 				<a href="https://sxc.moe">Shuxiao Chen</a>,
 				<a href="https://www.bozhangupenn.com/">Bo Zhang</a>
-			
         <br>
         <em>Journal of Causal Inference</em>, 2025
         <br>
-        <a href="data/suppl_jci-2023-0020_suppl.pdf">supplement</a>
+        <a href="https://www.degruyterbrill.com/document/doi/10.1515/jci-2023-0020/html?lang=en&srsltid=AfmBOoq6N0kCiMVuNKotXHLNw8oX9l5bqaSA0alHg_yHOxTApwG613Nd">pdf</a> / <a href="data/suppl_jci-2023-0020_suppl.pdf">supplement</a>
         <p></p>
         <p>
 We proposed a framework for using placebo samples in observational studies to detect and correct for unmeasured confounding bias. It develops identification assumptions and estimation methods—including regression, weighting, and doubly robust approaches—and validates them through simulations and an applied case study on tax credits and infant health.
@@ -145,42 +140,22 @@ We proposed a framework for using placebo samples in observational studies to de
 
 		  
 
-    <tr onmouseout="bog_stop()" onmouseover="bog_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='bog_image'><video  width=100% muted autoplay loop>
-          <source src="images/ITT.jpg" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/ITT.jpg' width=100%>
-        </div>
-        <script type="text/javascript">
-          function bog_start() {
-            document.getElementById('bog_image').style.opacity = "1";
-          }
-
-          function bog_stop() {
-            document.getElementById('bog_image').style.opacity = "0";
-          }
-          bog_stop()
-        </script>
+    <tr>
+      <td style="padding:20px;width:38%;vertical-align:middle">
+        <img src='images/ITT.jpg' width=100% style="border-radius:4px;">
       </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://www.tandfonline.com/doi/full/10.1080/01621459.2024.2360643#abstract">
-          <span class="papertitle">Generalizing the Intention-to-Treat Effect of an Active Control from Historical Placebo-Controlled Trials: A Case Study of the Efficacy of Daily Oral TDF/FTC in the HPTN 084 Study
-</span>
-        </a>
+      <td style="padding:20px;width:62%;vertical-align:middle">
+        <span class="papertitle">Generalizing the Intention-to-Treat Effect of an Active Control from Historical Placebo-Controlled Trials: A Case Study of the Efficacy of Daily Oral TDF/FTC in the HPTN 084 Study</span>
         <br>
 				<strong>Qijia He</strong>,
 	      <a href="https://sites.google.com/view/feigao-fredhutch">Fei Gao</a>,
 				<a href="https://www.ugent.be/dass/en/research/dukes/dukes.htm">Oliver Dukes</a>,
 				<a href="https://wrhi.ac.za/leadership/sinead-delany-moretlwe/">Sinead Delany-Moretlwe</a>,
-				<a href="https://www.bozhangupenn.com/">Bo Zhang</a>*
-			
+				<a href="https://www.bozhangupenn.com/">Bo Zhang</a>
         <br>
         <em>Journal of the American Statistical Association</em>, 2024
         <br>
-        <a href="data/uasa_a_2360643_sm6715.pdf">supplement</a>
+        <a href="https://www.tandfonline.com/doi/full/10.1080/01621459.2024.2360643#abstract">pdf</a> / <a href="data/uasa_a_2360643_sm6715.pdf">supplement</a>
         <p></p>
         <p>
 We developed a potential outcomes framework to estimate the ITT effect of an active control versus placebo in active-controlled trials, using historical placebo-controlled data. Our method enables ITT estimation when the placebo arm is unavailable and accounts for unmeasured confounders using instrumental variables.
@@ -190,42 +165,21 @@ We developed a potential outcomes framework to estimate the ITT effect of an act
 
 
 
- <tr onmouseout="bog_stop()" onmouseover="bog_start()">
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <div class="one">
-          <div class="two" id='bog_image'><video  width=100% muted autoplay loop>
-          <source src="images/ITR.jpg" type="video/mp4">
-          Your browser does not support the video tag.
-          </video></div>
-          <img src='images/ITR.jpg' width=100%>
-        </div>
-        <script type="text/javascript">
-          function bog_start() {
-            document.getElementById('bog_image').style.opacity = "1";
-          }
-
-          function bog_stop() {
-            document.getElementById('bog_image').style.opacity = "0";
-          }
-          bog_stop()
-        </script>
+ <tr>
+      <td style="padding:20px;width:38%;vertical-align:middle">
+        <img src='images/ITR.jpg' width=100% style="border-radius:4px;">
       </td>
-      <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://journals.sagepub.com/doi/10.1177/09622802241262525">
-          <span class="papertitle">Estimating individualized treatment rules by optimizing the adjusted probability of a longer survival
-
-</span>
-        </a>
+      <td style="padding:20px;width:62%;vertical-align:middle">
+        <span class="papertitle">Estimating individualized treatment rules by optimizing the adjusted probability of a longer survival</span>
         <br>
 				<strong>Qijia He</strong>,
 				<a href="https://sites.google.com/view/shixiaozhang/research?authuser=0">Shixiao Zhang</a>,
 				<a href="https://www.biostat.washington.edu/people/michael-le-blanc">Michael L LeBlanc</a>,
-				<a href="https://research.fredhutch.org/zhao/en.html">Yingqi Zhao</a>*
-			
+				<a href="https://research.fredhutch.org/zhao/en.html">Yingqi Zhao</a>
         <br>
         <em>Statistical Methods in Medical Research</em>, 2024
         <br>
-        <a href="https://journals.sagepub.com/doi/suppl/10.1177/09622802241262525/suppl_file/sj-pdf-1-smm-10.1177_09622802241262525.pdf">supplement</a>
+        <a href="https://journals.sagepub.com/doi/10.1177/09622802241262525">pdf</a> / <a href="https://journals.sagepub.com/doi/suppl/10.1177/09622802241262525/suppl_file/sj-pdf-1-smm-10.1177_09622802241262525.pdf">supplement</a>
         <p></p>
         <p>
 We introduced a new criterion for individualized treatment rules based on the adjusted probability of longer survival, offering a clear and clinically relevant objective. Our method, optimal adjusted probability learning, constructs the best treatment rule by maximizing this nonparametric survival benefit.
@@ -237,49 +191,27 @@ We introduced a new criterion for individualized treatment rules based on the ad
           </tbody></table>
 
 
-		   <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:20px;width:100%;vertical-align:middle">
-                <h2>Presentations</h2>
-                <p>
-                 <strong>Generalizing the Intention-to-Treat Effect of an Active Control from Historical Placebo-Controlled Trials</strong>                
-		       <br>
-		      <p>
-		       - The Translational Data Science Integrated Research Center Retreat. Kirkland, WA, 2023.
-		      <br>
-			      <p>
-			- 20th Annual STI & HIV Research Symposium. Seattle, WA, 2023.
-		       <br>
-				      <p>
-			- American Causal Inference Conference. Seattle, WA, 2024
-		       <br>
-					      <p>
-			- Joint Statistical Meetings. Portland, OR, 2024.
-			      <br>
-		</p>
-		      <strong>Approximate Bayesian Computation (ABC)-Calibrated Microsimulation Model for Predicting HIV-1 Prevention
-Efficacy of Broadly Neutralizing Antibodies</strong>                
-		       <br>
-		      <p>
-		       - HVTN Africa Regional Meeting. Cape Town, South Africa, 2024.
-		      <br>
-			      <p>
-              </td>
-            </tr>
-	
-  </tbody></table>
-           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
-              <td>
+              <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Industry Experience</h2>
               </td>
             </tr>
           </tbody></table>
-          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
             <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/Apple-Logo.png" alt="clean-usnob" width="150"></td>
-              <td width="75%" valign="center">
+              <td style="padding:20px;width:20%;vertical-align:middle"><img src="images/Tiktok-Logo.png" style="width:100%;max-width:120px;display:block;margin:auto;"></td>
+              <td style="padding:20px;width:80%;vertical-align:middle">
+                <strong>Machine Learning Intern (Spring 2026)</strong>
+                <p>
+                E-commerce Governance Algorithms, TikTok
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding:20px;width:20%;vertical-align:middle"><img src="images/Apple-Logo.png" style="width:100%;max-width:120px;display:block;margin:auto;"></td>
+              <td style="padding:20px;width:80%;vertical-align:middle">
                  <strong>PhD Intern (Summer 2025)</strong>
                 <p>
                 Ads Platform, Apple
@@ -290,27 +222,30 @@ Efficacy of Broadly Neutralizing Antibodies</strong>
 		  
 
           </tbody></table>
-           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
+           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
-              <td>
+              <td style="padding:20px;width:100%;vertical-align:middle">
                 <h2>Teaching Experience</h2>
               </td>
             </tr>
           </tbody></table>
-          <table width="100%" align="center" border="0" cellpadding="20"><tbody>
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
             <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/uw_logo.png" alt="clean-usnob" width="100"></td>
-              <td width="75%" valign="center">
+              <td style="padding:20px;width:20%;vertical-align:middle"><img src="images/uw_logo.png" style="width:100%;max-width:84px;display:block;margin:auto;"></td>
+              <td style="padding:20px;width:80%;vertical-align:middle">
                  <strong>Department of Statistics, University of Washington</strong>
-                <p>
-                Teaching Assistant in STAT 311 Elements of Statistical Methods (Winter 2024, Autumn 2025)
+                <ul style="margin:4px 0 0 0;padding-left:18px;">
+                  <li>STAT 311 Elements of Statistical Methods (Winter 2024, Autumn 2025)</li>
+                  <li>STAT 513 Statistical Inference (Winter 2026)</li>
+                  <li>STAT 435 Introduction to Statistical Machine Learning (Spring 2026)</li>
+                </ul>
               </td>
             </tr>
 		  
             <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/sysu_logo.png" alt="clean-usnob" width="100"></td>
-              <td width="75%" valign="center">
+              <td style="padding:20px;width:20%;vertical-align:middle"><img src="images/sysu_logo.png" style="width:100%;max-width:84px;display:block;margin:auto;"></td>
+              <td style="padding:20px;width:80%;vertical-align:middle">
                <strong>Academic tutoring center, School of Mathematics, Sun Yat-sen University</strong>
                 <p>
                 Tutor in Mathematical analysis (Fall 2018)
@@ -318,8 +253,8 @@ Efficacy of Broadly Neutralizing Antibodies</strong>
             </tr>
 
 		   <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle"><img src="images/tal_logo.png" alt="clean-usnob" width="100"></td>
-              <td width="75%" valign="center">
+              <td style="padding:20px;width:20%;vertical-align:middle"><img src="images/tal_logo.png" style="width:100%;max-width:84px;display:block;margin:auto;"></td>
+              <td style="padding:20px;width:80%;vertical-align:middle">
                <strong>TAL Education Group</strong>
                 <p>
                 Teaching Assistant in primary-school Olympiad Mathematics (2017-2018)
