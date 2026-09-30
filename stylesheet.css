@@ -81,24 +81,24 @@ tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 h2 {
   margin: 0;
   font-weight: normal;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 24px;
 }
 
 .papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 700;
 }
 
@@ -106,7 +106,7 @@ h2 {
   padding-top: 0;
   margin: 0;
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 30px;
+  font-size: 32px;
 }
 
 .one {
@@ -136,7 +136,7 @@ span.highlight {
 /* Publication list */
 .pubcat {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   color: #000;
   margin: 18px 0 4px 0;
@@ -189,6 +189,6 @@ p.tldr .tldr-label {
 }
 
 img.inline-icon {
-  height: 13px;
+  height: 15px;
   margin: 0 3px -2px 1px;
 }
