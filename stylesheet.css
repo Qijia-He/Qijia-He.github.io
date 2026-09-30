@@ -192,3 +192,34 @@ img.inline-icon {
   height: 15px;
   margin: 0 3px -2px 1px;
 }
+
+td.photo-cell {
+  position: relative;
+  width: 25%;
+  padding: 0;
+}
+
+td.photo-cell img {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  width: 86%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 8px;
+}
+
+td.intro-cell {
+  width: 75%;
+  padding: 0 2.5% 0 2.5%;
+  vertical-align: top;
+}
+
+td.intro-cell p:first-child {
+  margin-top: 0;
+}
+
+td.intro-cell p:last-child {
+  margin-bottom: 0;
+}
