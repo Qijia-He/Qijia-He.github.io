@@ -27,7 +27,7 @@
                 </p>
                 <p>I am a final-year PhD student in the Department of Statistics at the <a href="https://stat.uw.edu/">University of Washington</a>, advised by Prof. <a href="https://www.bozhangupenn.com/">Bo Zhang</a>. I collaborate with Prof. <a href="https://www.ranjaykrishna.com/index.html">Ranjay Krishna</a> at the <a href="https://raivn.cs.washington.edu/">UW CSE RAIVN Lab</a> on multimodal AI research. Before graduate school, I received my B.S. in Statistics from <a href="https://www.sysu.edu.cn/sysuen/">Sun Yat-sen University</a>. I have also interned at Google, TikTok and Apple.
                 </p>
-                <p>My research interests lie broadly in vision–language models and causal inference, with a focus on multimodal reasoning and generation, agentic AI systems, and causal machine learning.
+                <p>I build <strong>LLM &amp; VLM agents</strong> through <strong>post-training</strong>: <strong>on-policy distillation</strong>, <strong>reinforcement learning</strong> (GRPO), and <strong>capability-aware data selection</strong>. My research focuses on <strong>stable, sample-efficient</strong> training for <strong>long-horizon, multi-turn agents</strong>, <strong>reliable coding agents</strong> with adaptive failure recovery and cost-aware model routing, and <strong>multimodal code generation</strong> such as figure-to-SVG.
                 </p>
 				  <p> I am currently seeking full-time industry opportunities starting in 2027. Please feel free to reach out for any relevant opportunities!
 		      <p> Contact me: heqj3@uw.edu
@@ -50,196 +50,120 @@
             </tr>
           </tbody></table>
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px 20px 20px 20px;width:100%;vertical-align:middle">
 
+                <h4 class="pubcat">LLM / VLM</h4>
 
-    <tr>
-      <td colspan="2" style="padding:10px 20px 4px 20px;">
-        <h3 style="margin:0;font-size:19px;font-weight:600;color:#000;">LLM / VLM</h3>
-      </td>
-    </tr>
+                <table class="pub" width="100%"><tr>
+                  <td class="pubimg"><img src="images/dtdd_pipeline.png" width="100%" style="border-radius:4px;"></td>
+                  <td class="pubtext">
+                  <span class="linkcolor"><strong>DTDD: Divergence-Triggered Dynamic Distillation for Reliable On-Policy Supervision</strong></span><br>
+                  <strong><u>Qijia He</u></strong>, Zequn Li, Spencer Luo, Tianle Chen, Pradyumna Narayana, Zixian Ma, Ranjay Krishna, Lan Nie, Sugato Basu<br>
+                  <em>Preprint</em>, 2026
+                  <p class="tldr">When a student trajectory drifts too far from the teacher, on-policy distillation becomes unstable. DTDD detects the drift via segment-level divergence and hands off to teacher recovery. Across long-reasoning math, base-model distillation, and ALFWorld agents, it cuts the peak gradient norm from 12.0 to 1.4, reaches OPD-level accuracy in about 2.5&times; fewer updates, and raises success from 76.5% to 81.3%.</p>
+                </td></tr></table>
 
-    <tr>
-      <td style="padding:20px;width:38%;vertical-align:middle">
-        <img src='images/teaser.png' width=100% style="border-radius:4px;">
-      </td>
-      <td style="padding:20px;width:62%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2603.24575"><span class="papertitle">VFIG: Vectorizing Complex Figures in SVG with Vision-Language Models</span></a>
-        <br>
-        <strong><u>Qijia He</u></strong>,
-        Xunmei Liu,
-        Hammaad Memon,
-        Ziang Li,
-        Zixian Ma,
-        Jaemin Cho,
-        Zhongzheng Ren,
-        Dan Weld,
-        Ranjay Krishna
-        <br>
-        <em>NeurIPS 2026 (Evaluations & Datasets Track)</em>
-        <br>
-        <a href="https://arxiv.org/abs/2603.24575">pdf</a> / <a href="https://vfig-proj.github.io/">website</a> / <a href="https://github.com/RAIVNLab/VFig/tree/main">code</a>
-        <p>
-VFIG is the first large-scale ecosystem for scientific figure-to-SVG generation, introducing a 66K figure–SVG dataset, a new benchmark, and a family of VLMs trained with SFT+RL that achieve state-of-the-art open-source performance and parity with GPT-5.2.
-        </p>
-      </td>
-    </tr>
+                <table class="pub" width="100%"><tr>
+                  <td class="pubimg"><img src="images/agent_capability_pipeline.png" width="100%" style="border-radius:4px;"></td>
+                  <td class="pubtext">
+                  <span class="linkcolor"><strong>Agent Capability Shapes the Value of Post-Training Data</strong></span><br>
+                  Jiayi Cheng, Yunshu Wu, Chenqian Le, <strong><u>Qijia He</u></strong>, Runhao Li, Michael Yue, Xupeng Chen, Michal Mankowski<br>
+                  <em>Preprint</em>, 2026
+                  <p class="tldr">Which experiences should an agent learn from? We select post-training data by the agent's own prediction gaps: for SFT, traces whose execution outcomes the agent mispredicts yield 12.8% higher mean reward than random selection; for RL, tasks whose rollout rewards it mispredicts improve final reward by 33.3%, and cheap predicted-reward proxies work without extra verification.</p>
+                </td></tr></table>
 
+                <table class="pub" width="100%"><tr>
+                  <td class="pubimg"><img src="images/multiharness_fig1.png" width="100%" style="border-radius:4px;"></td>
+                  <td class="pubtext">
+                  <a href="https://arxiv.org/abs/2609.04518"><strong>What Does Multi-Harness RL Learn? Credit Assignment and Portability in Coding Agents</strong></a><br>
+                  Chenqian Le, Jiayi Cheng, <strong><u>Qijia He</u></strong>, Runhao Li, Yinghao Li, Xupeng Chen<br>
+                  <em>Preprint</em>, 2026
+                  [<a href="https://arxiv.org/abs/2609.04518">Paper</a>]
+                  <p class="tldr">Multi-harness RL for coding agents both trains across several harnesses and compares their rewards inside one GRPO group. Replaying identical Qwen3-8B trajectories from Aider, OpenHands, Qwen Code, and SWE-agent under per-harness vs. cross-harness grouping, we find the evaluation harness moves SWE-bench Verified solve rate by 4.3&times;, while the grouping rule has no detectable effect on an unseen held-out harness.</p>
+                </td></tr></table>
 
-    <tr>
-      <td style="padding:20px;width:38%;vertical-align:middle">
-        <img src='images/coderescue_fig1.png' width=100% style="border-radius:4px;">
-      </td>
-      <td style="padding:20px;width:62%;vertical-align:middle">
-        <a href="https://openreview.net/pdf?id=y8w7HIaLtu"><span class="papertitle">ARCHER: Adaptive Recovery Routing with Conformal-risk Calibration for Coding Agents</span></a>
-        <br>
-        <strong><u>Qijia He</u></strong>,
-        Jiayi Cheng,
-        Chenqian Le,
-        Rui Wang,
-        Xunmei Liu,
-        Yixian Chen,
-        Jie Mei,
-        Zhihao Wang,
-        Xupeng Chen,
-        Yuhuan Chen,
-        Tao Wang
-        <br>
-        <em>Efficient Reasoning @ COLM 2026</em>
-		  <span style="color: red; font-weight: bold;"> Spotlight </span>
-        <br>
-        <a href="https://openreview.net/pdf?id=y8w7HIaLtu">pdf</a> / <a href="https://github.com/Qijia-He/ARCHER">code</a>
-        <p>
-When a coding agent fails, should it attempt cheap recovery or escalate to a stronger model? ARCHER casts this as a routing problem over heterogeneous recovery actions trained on execution rollouts, with a conformal risk control layer that adapts to any budget without retraining—exceeding always-escalate solve rates at 35% of its recovery cost.
-        </p>
-      </td>
-    </tr>
+                <table class="pub" width="100%"><tr>
+                  <td class="pubimg"><img src="images/teaser.png" width="100%" style="border-radius:4px;"></td>
+                  <td class="pubtext">
+                  <a href="https://arxiv.org/abs/2603.24575"><strong>VFIG: Vectorizing Complex Figures in SVG with Vision-Language Models</strong></a><br>
+                  <strong><u>Qijia He</u></strong>, Xunmei Liu, Hammaad Memon, Ziang Li, Zixian Ma, Jaemin Cho, Zhongzheng Ren, Dan Weld, Ranjay Krishna<br>
+                  <em>NeurIPS 2026 (Evaluations & Datasets Track)</em>
+                  [<a href="https://arxiv.org/abs/2603.24575">Paper</a>]
+                  [<a href="https://vfig-proj.github.io/">Project Page</a>]
+                  [<a href="https://github.com/RAIVNLab/VFig/tree/main">Code</a>]
+                  <p class="tldr">VFIG is the first large-scale ecosystem for scientific figure-to-SVG generation, introducing a 66K figure–SVG dataset, a new benchmark, and a family of VLMs trained with SFT+RL that achieve state-of-the-art open-source performance and parity with GPT-5.2.</p>
+                </td></tr></table>
 
+                <table class="pub" width="100%"><tr>
+                  <td class="pubimg"><img src="images/coderescue_fig1.png" width="100%" style="border-radius:4px;"></td>
+                  <td class="pubtext">
+                  <a href="https://openreview.net/pdf?id=y8w7HIaLtu"><strong>ARCHER: Adaptive Recovery Routing with Conformal-risk Calibration for Coding Agents</strong></a><br>
+                  <strong><u>Qijia He</u></strong>, Jiayi Cheng, Chenqian Le, Rui Wang, Xunmei Liu, Yixian Chen, Jie Mei, Zhihao Wang, Xupeng Chen, Yuhuan Chen, Tao Wang<br>
+                  <em>Efficient Reasoning @ COLM 2026</em> <span class="award">Spotlight</span>
+                  [<a href="https://openreview.net/pdf?id=y8w7HIaLtu">Paper</a>]
+                  [<a href="https://github.com/Qijia-He/ARCHER">Code</a>]
+                  <p class="tldr">When a coding agent fails, should it attempt cheap recovery or escalate to a stronger model? ARCHER casts this as a routing problem over heterogeneous recovery actions trained on execution rollouts, with a conformal risk control layer that adapts to any budget without retraining—exceeding always-escalate solve rates at 35% of its recovery cost.</p>
+                </td></tr></table>
 
-	 <tr>
-      <td style="padding:20px;width:38%;vertical-align:middle">
-        <img src='images/Chatbot_Arena_Model_ELO_Rankings.png' width=100% style="border-radius:4px;">
-      </td>
-      <td style="padding:20px;width:62%;vertical-align:middle">
-        <a href="https://www.arxiv.org/abs/2509.11026"><span class="papertitle">Rethinking Human Preference Evaluation of LLM Rationales</span></a>
-        <br>
-	      Ziang Li,
-				Manasi Ganti,
-				Zixian Ma,
-		  Helena Vasconcelos,
-		  <strong><u>Qijia He</u></strong>,
-		  Ranjay Krishna
-        <br>
-        <em>XLLM-Reason-Plan @ COLM 2025</em>
-		<span style="color: red; font-weight: bold;"> Best Paper Award (Honorable Mention)</span>
-        <br>
-        <a href="https://www.arxiv.org/abs/2509.11026">pdf</a>
-        <p>
-Large language models (LLMs) generate rationales that improve reasoning and interpretability, but existing evaluations using binary human or LLM preferences are limited and opaque. We introduce an attribute-based evaluation framework that defines key rationale qualities, explains human preferences, and enables more nuanced model comparisons through attribute-specific analysis.
-	</p>
-      </td>
-    </tr>
-			  
+                <table class="pub" width="100%"><tr>
+                  <td class="pubimg"><img src="images/Chatbot_Arena_Model_ELO_Rankings.png" width="100%" style="border-radius:4px;"></td>
+                  <td class="pubtext">
+                  <a href="https://www.arxiv.org/abs/2509.11026"><strong>Rethinking Human Preference Evaluation of LLM Rationales</strong></a><br>
+                  Ziang Li, Manasi Ganti, Zixian Ma, Helena Vasconcelos, <strong><u>Qijia He</u></strong>, Ranjay Krishna<br>
+                  <em>XLLM-Reason-Plan @ COLM 2025</em> <span class="award">Best Paper Award (Honorable Mention)</span>
+                  [<a href="https://www.arxiv.org/abs/2509.11026">Paper</a>]
+                  <p class="tldr">Large language models (LLMs) generate rationales that improve reasoning and interpretability, but existing evaluations using binary human or LLM preferences are limited and opaque. We introduce an attribute-based evaluation framework that defines key rationale qualities, explains human preferences, and enables more nuanced model comparisons through attribute-specific analysis.</p>
+                </td></tr></table>
 
+                <h4 class="pubcat">Causal Inference</h4>
 
-    <tr>
-      <td colspan="2" style="padding:30px 20px 4px 20px;">
-        <h3 style="margin:0;font-size:19px;font-weight:600;color:#000;">Causal Inference</h3>
-      </td>
-    </tr>
+                <table class="pub" width="100%"><tr>
+                  <td class="pubimg"><img src="images/med.png" width="100%" style="border-radius:4px;"></td>
+                  <td class="pubtext">
+                  <a href="https://arxiv.org/abs/2604.06407"><strong>Dealing with positivity violations in mediation analysis via weighted controlled effects</strong></a><br>
+                  <strong><u>Qijia He</u></strong>, Bo Zhang<br>
+                  <em>arxiv</em>, 2026
+                  [<a href="https://arxiv.org/abs/2604.06407">Paper</a>]
+                  [<a href="https://github.com/Qijia-He/weighted_CVE">Code</a>]
+                  <p class="tldr"></p> <p> This paper introduces a weighted controlled risk approach to causal mediation analysis, addressing scenarios where traditional fixed-level interventions violate the positivity assumption by targeting subpopulations with a high probability of attaining specific mediator levels.</p>
+                </td></tr></table>
 
-	<tr>
-      <td style="padding:20px;width:38%;vertical-align:middle">
-        <img src='images/med.png' width=100% style="border-radius:4px;">
-      </td>
-      <td style="padding:20px;width:62%;vertical-align:middle">
-        <a href="https://arxiv.org/abs/2604.06407"><span class="papertitle">Dealing with positivity violations in mediation analysis via weighted controlled effects</span></a>
-        <br>
-				<strong><u>Qijia He</u></strong>,
-				Bo Zhang
-        <br>
-        <em>arxiv</em>, 2026
-        <br>
-        <a href="https://arxiv.org/abs/2604.06407">pdf</a> / <a href="https://github.com/Qijia-He/weighted_CVE">code</a>
-        <p></p>
-        <p>
-This paper introduces a weighted controlled risk approach to causal mediation analysis, addressing scenarios where traditional fixed-level interventions violate the positivity assumption by targeting subpopulations with a high probability of attaining specific mediator levels.
-		</p>
-      </td>
-    </tr>
-			  
+                <table class="pub" width="100%"><tr>
+                  <td class="pubimg"><img src="images/j_jci-2023-0020_fig_001.jpg" width="100%" style="border-radius:4px;"></td>
+                  <td class="pubtext">
+                  <a href="https://www.degruyterbrill.com/document/doi/10.1515/jci-2023-0020/html?lang=en&srsltid=AfmBOoq6N0kCiMVuNKotXHLNw8oX9l5bqaSA0alHg_yHOxTApwG613Nd"><strong>Role of placebo samples in observational studies</strong></a><br>
+                  Ting Ye, <strong><u>Qijia He</u></strong>, Shuxiao Chen, Bo Zhang<br>
+                  <em>Journal of Causal Inference</em>, 2025
+                  [<a href="https://www.degruyterbrill.com/document/doi/10.1515/jci-2023-0020/html?lang=en&srsltid=AfmBOoq6N0kCiMVuNKotXHLNw8oX9l5bqaSA0alHg_yHOxTApwG613Nd">Paper</a>]
+                  [<a href="data/suppl_jci-2023-0020_suppl.pdf">Supplement</a>]
+                  <p class="tldr"></p> <p> We proposed a framework for using placebo samples in observational studies to detect and correct for unmeasured confounding bias. It develops identification assumptions and estimation methods—including regression, weighting, and doubly robust approaches—and validates them through simulations and an applied case study on tax credits and infant health.</p>
+                </td></tr></table>
 
-    <tr>
-      <td style="padding:20px;width:38%;vertical-align:middle">
-        <img src='images/j_jci-2023-0020_fig_001.jpg' width=100% style="border-radius:4px;">
-      </td>
-      <td style="padding:20px;width:62%;vertical-align:middle">
-        <a href="https://www.degruyterbrill.com/document/doi/10.1515/jci-2023-0020/html?lang=en&srsltid=AfmBOoq6N0kCiMVuNKotXHLNw8oX9l5bqaSA0alHg_yHOxTApwG613Nd"><span class="papertitle">Role of placebo samples in observational studies</span></a>
-        <br>
-	      Ting Ye,
-				<strong><u>Qijia He</u></strong>,
-				Shuxiao Chen,
-				Bo Zhang
-        <br>
-        <em>Journal of Causal Inference</em>, 2025
-        <br>
-        <a href="https://www.degruyterbrill.com/document/doi/10.1515/jci-2023-0020/html?lang=en&srsltid=AfmBOoq6N0kCiMVuNKotXHLNw8oX9l5bqaSA0alHg_yHOxTApwG613Nd">pdf</a> / <a href="data/suppl_jci-2023-0020_suppl.pdf">supplement</a>
-        <p></p>
-        <p>
-We proposed a framework for using placebo samples in observational studies to detect and correct for unmeasured confounding bias. It develops identification assumptions and estimation methods—including regression, weighting, and doubly robust approaches—and validates them through simulations and an applied case study on tax credits and infant health.
-	</p>
-      </td>
-    </tr>
+                <table class="pub" width="100%"><tr>
+                  <td class="pubimg"><img src="images/ITT.jpg" width="100%" style="border-radius:4px;"></td>
+                  <td class="pubtext">
+                  <a href="https://www.tandfonline.com/doi/full/10.1080/01621459.2024.2360643#abstract"><strong>Generalizing the Intention-to-Treat Effect of an Active Control from Historical Placebo-Controlled Trials</strong></a><br>
+                  <strong><u>Qijia He</u></strong>, Fei Gao, Oliver Dukes, Sinead Delany-Moretlwe, Bo Zhang<br>
+                  <em>Journal of the American Statistical Association</em>, 2024
+                  [<a href="https://www.tandfonline.com/doi/full/10.1080/01621459.2024.2360643#abstract">Paper</a>]
+                  [<a href="data/uasa_a_2360643_sm6715.pdf">Supplement</a>]
+                  <p class="tldr"></p> <p> We developed a potential outcomes framework to estimate the ITT effect of an active control versus placebo in active-controlled trials, using historical placebo-controlled data. Our method enables ITT estimation when the placebo arm is unavailable and accounts for unmeasured confounders using instrumental variables.</p>
+                </td></tr></table>
 
-		  
+                <table class="pub" width="100%"><tr>
+                  <td class="pubimg"><img src="images/ITR.jpg" width="100%" style="border-radius:4px;"></td>
+                  <td class="pubtext">
+                  <a href="https://journals.sagepub.com/doi/10.1177/09622802241262525"><strong>Estimating individualized treatment rules by optimizing the adjusted probability of a longer survival</strong></a><br>
+                  <strong><u>Qijia He</u></strong>, Shixiao Zhang, Michael L LeBlanc, Yingqi Zhao<br>
+                  <em>Statistical Methods in Medical Research</em>, 2024
+                  [<a href="https://journals.sagepub.com/doi/10.1177/09622802241262525">Paper</a>]
+                  [<a href="https://journals.sagepub.com/doi/suppl/10.1177/09622802241262525/suppl_file/sj-pdf-1-smm-10.1177_09622802241262525.pdf">Supplement</a>]
+                  <p class="tldr"></p> <p> We introduced a new criterion for individualized treatment rules based on the adjusted probability of longer survival, offering a clear and clinically relevant objective. Our method, optimal adjusted probability learning, constructs the best treatment rule by maximizing this nonparametric survival benefit.</p>
+                </td></tr></table>
 
-    <tr>
-      <td style="padding:20px;width:38%;vertical-align:middle">
-        <img src='images/ITT.jpg' width=100% style="border-radius:4px;">
-      </td>
-      <td style="padding:20px;width:62%;vertical-align:middle">
-        <a href="https://www.tandfonline.com/doi/full/10.1080/01621459.2024.2360643#abstract"><span class="papertitle">Generalizing the Intention-to-Treat Effect of an Active Control from Historical Placebo-Controlled Trials</span></a>
-        <br>
-				<strong><u>Qijia He</u></strong>,
-	      Fei Gao,
-				Oliver Dukes,
-				Sinead Delany-Moretlwe,
-				Bo Zhang
-        <br>
-        <em>Journal of the American Statistical Association</em>, 2024
-        <br>
-        <a href="https://www.tandfonline.com/doi/full/10.1080/01621459.2024.2360643#abstract">pdf</a> / <a href="data/uasa_a_2360643_sm6715.pdf">supplement</a>
-        <p></p>
-        <p>
-We developed a potential outcomes framework to estimate the ITT effect of an active control versus placebo in active-controlled trials, using historical placebo-controlled data. Our method enables ITT estimation when the placebo arm is unavailable and accounts for unmeasured confounders using instrumental variables.
-	</p>
-      </td>
-    </tr>
-
-
-
- <tr>
-      <td style="padding:20px;width:38%;vertical-align:middle">
-        <img src='images/ITR.jpg' width=100% style="border-radius:4px;">
-      </td>
-      <td style="padding:20px;width:62%;vertical-align:middle">
-        <a href="https://journals.sagepub.com/doi/10.1177/09622802241262525"><span class="papertitle">Estimating individualized treatment rules by optimizing the adjusted probability of a longer survival</span></a>
-        <br>
-				<strong><u>Qijia He</u></strong>,
-				Shixiao Zhang,
-				Michael L LeBlanc,
-				Yingqi Zhao
-        <br>
-        <em>Statistical Methods in Medical Research</em>, 2024
-        <br>
-        <a href="https://journals.sagepub.com/doi/10.1177/09622802241262525">pdf</a> / <a href="https://journals.sagepub.com/doi/suppl/10.1177/09622802241262525/suppl_file/sj-pdf-1-smm-10.1177_09622802241262525.pdf">supplement</a>
-        <p></p>
-        <p>
-We introduced a new criterion for individualized treatment rules based on the adjusted probability of longer survival, offering a clear and clinically relevant objective. Our method, optimal adjusted probability learning, constructs the best treatment rule by maximizing this nonparametric survival benefit.
-	</p>
-      </td>
-    </tr>
-
-
+              </td>
+            </tr>
           </tbody></table>
 
 

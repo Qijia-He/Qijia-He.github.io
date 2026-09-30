@@ -133,3 +133,50 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+/* Publication list */
+.pubcat {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: #000;
+  margin: 18px 0 4px 0;
+}
+
+table.pub {
+  border-collapse: collapse;
+}
+
+table.pub td {
+  padding: 9px 4px;
+  border-bottom: 1px solid #edf2f7;
+  line-height: 1.55;
+}
+
+.award {
+  color: red;
+  font-weight: 700;
+}
+
+.linkcolor {
+  color: #1772d0;
+}
+
+td.pubimg {
+  width: 28%;
+  padding: 14px 20px 14px 4px;
+  vertical-align: middle;
+}
+
+td.pubtext {
+  vertical-align: middle;
+}
+
+p.tldr {
+  margin: 6px 0 0 0;
+}
+
+td.pubimg img {
+  display: block;
+  max-height: 140px;
+  object-fit: contain;
+}
