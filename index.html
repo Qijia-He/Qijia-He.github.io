@@ -71,12 +71,21 @@
                 </td></tr></table>
 
                 <table class="pub" width="100%"><tr>
+                  <td class="pubimg"><img src="images/deloop_figure1.png" width="100%" style="border-radius:4px;"></td>
+                  <td class="pubtext">
+                  <a href="https://arxiv.org/abs/2610.19376"><strong>DeLoop: Repeated Actions as Self-Supervision for Long-Horizon Agents</strong></a><br>
+                  Tianle Chen, Pushkar Singh, Ketan Todi, Biswajit Paria, <strong><u>Qijia He</u></strong>, Wenqi Wang, Yuwen Tan, Jike Zhong, Sugato Basu, Deepti Ghadiyaram, Arjun Akula<br>
+                  <em><img src="images/icons/google.png" class="inline-icon" alt="Google"> Preprint</em>, 2026
+                  [<a href="https://arxiv.org/abs/2610.19376">Paper</a>]
+                  <p class="tldr"><b class="tldr-label">TL;DR:</b>&nbsp;Long-horizon agents often repeat tool calls, especially after context compression. DeLoop turns the agent's own loops into self-supervision by pairing a repeated action with the first later loop-breaking action and training with DPO&mdash;without rewards, gold answers, or LLM judges. On CodeGym, it cuts Qwen3-8B's loop rate from 57.3% to 6.1% and uses about one third as many steps; on Qwen3-32B, it also raises task success from 37.7% to 44.8%.</p>
+                </td></tr></table>
+
+                <table class="pub" width="100%"><tr>
                   <td class="pubimg"><img src="images/agent_capability_pipeline.png" width="100%" style="border-radius:4px;"></td>
                   <td class="pubtext">
-                  <a href="https://arxiv.org/pdf/2610.19376"><strong>Agent Capability Shapes the Value of Post-Training Data</strong></a><br>
+                  <span class="linkcolor"><strong>Agent Capability Shapes the Value of Post-Training Data</strong></span><br>
                   Jiayi Cheng, Yunshu Wu, Chenqian Le, <strong><u>Qijia He</u></strong>, Runhao Li, Michael Yue, Xupeng Chen, Michal Mankowski<br>
-                  <em><img src="images/icons/google.png" class="inline-icon" alt="Google"> Preprint</em>, 2026
-                  [<a href="https://arxiv.org/pdf/2610.19376">Paper</a>]
+                  <em>Preprint</em>, 2026
                   <p class="tldr"><b class="tldr-label">TL;DR:</b>&nbsp;Which experiences should an agent learn from? We select post-training data by the agent's own prediction gaps: for SFT, traces whose execution outcomes the agent mispredicts yield 12.8% higher mean reward than random selection; for RL, tasks whose rollout rewards it mispredicts improve final reward by 33.3%, and cheap predicted-reward proxies work without extra verification.</p>
                 </td></tr></table>
 
