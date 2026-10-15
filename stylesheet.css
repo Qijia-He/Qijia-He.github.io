@@ -144,12 +144,13 @@ span.highlight {
 
 table.pub {
   border-collapse: collapse;
+  width: 100%;
 }
 
 table.pub td {
-  padding: 9px 4px;
+  padding: 12px 4px;
   border-bottom: 1px solid #edf2f7;
-  line-height: 1.55;
+  line-height: 1.45;
 }
 
 .award {
@@ -161,14 +162,29 @@ table.pub td {
   color: #1772d0;
 }
 
-td.pubimg {
-  width: 28%;
-  padding: 14px 20px 14px 4px;
+table.pub td.pubimg {
+  width: 24%;
+  padding: 12px 22px 12px 4px;
   vertical-align: middle;
 }
 
-td.pubtext {
+table.pub td.pubtext {
+  width: 76%;
   vertical-align: middle;
+  font-size: 14px;
+}
+
+table.pub td.pubtext a,
+table.pub td.pubtext strong,
+table.pub td.pubtext em,
+table.pub td.pubtext span {
+  font-size: inherit;
+}
+
+table.pub td.pubtext > a:first-of-type strong,
+table.pub td.pubtext > .linkcolor strong {
+  font-size: 16px;
+  line-height: 1.35;
 }
 
 p.tldr {
@@ -178,7 +194,7 @@ p.tldr {
 
 td.pubimg img {
   display: block;
-  max-height: 140px;
+  max-height: 112px;
   object-fit: contain;
 }
 
