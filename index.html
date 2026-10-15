@@ -8,7 +8,7 @@
     <meta name="author" content="Qijia He">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20261015">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css?v=20261015-2">
     
   </head>
 
@@ -67,7 +67,7 @@
                   [<a href="https://arxiv.org/pdf/2610.19302">Paper</a>]
                   [<a href="https://dtdd-proj.github.io/">Project Page</a>]
                   [<a href="https://github.com/Qijia-He/dtdd">Code</a>]
-                  <p class="tldr"><b class="tldr-label">TL;DR:</b>&nbsp;When a student trajectory drifts too far from the teacher, on-policy distillation becomes unstable. DTDD detects the drift via segment-level divergence and hands off to teacher recovery. Across long-reasoning math, base-model distillation, and ALFWorld agents, it cuts the peak gradient norm from 12.0 to 1.4, reaches OPD-level accuracy in about 2.5&times; fewer updates, and raises success from 76.5% to 81.3%.</p>
+                  <p class="tldr"><b class="tldr-label">TL;DR:</b>&nbsp;DTDD stabilizes on-policy distillation by detecting segment-level student&ndash;teacher divergence and switching to teacher recovery. It cuts peak gradient norm from 12.0 to 1.4, learns 2.5&times; faster, and raises ALFWorld success from 76.5% to 81.3%.</p>
                 </td></tr></table>
 
                 <table class="pub" width="100%"><tr>
@@ -77,7 +77,7 @@
                   Tianle Chen, Pushkar Singh, Ketan Todi, Biswajit Paria, <strong><u>Qijia He</u></strong>, Wenqi Wang, Yuwen Tan, Jike Zhong, Sugato Basu, Deepti Ghadiyaram, Arjun Akula<br>
                   <em><img src="images/icons/google.png" class="inline-icon" alt="Google"> Preprint</em>, 2026
                   [<a href="https://arxiv.org/abs/2610.19376">Paper</a>]
-                  <p class="tldr"><b class="tldr-label">TL;DR:</b>&nbsp;Long-horizon agents often repeat tool calls, especially after context compression. DeLoop turns the agent's own loops into self-supervision by pairing a repeated action with the first later loop-breaking action and training with DPO&mdash;without rewards, gold answers, or LLM judges. On CodeGym, it cuts Qwen3-8B's loop rate from 57.3% to 6.1% and uses about one third as many steps; on Qwen3-32B, it also raises task success from 37.7% to 44.8%.</p>
+                  <p class="tldr"><b class="tldr-label">TL;DR:</b>&nbsp;DeLoop mines repeated actions as DPO negatives and later loop-breaking actions as positives, requiring no rewards or judges. On CodeGym, it cuts Qwen3-8B loops from 57.3% to 6.1% and raises Qwen3-32B success from 37.7% to 44.8%.</p>
                 </td></tr></table>
 
                 <table class="pub" width="100%"><tr>
@@ -86,7 +86,7 @@
                   <span class="linkcolor"><strong>Agent Capability Shapes the Value of Post-Training Data</strong></span><br>
                   Jiayi Cheng, Yunshu Wu, Chenqian Le, <strong><u>Qijia He</u></strong>, Runhao Li, Michael Yue, Xupeng Chen, Michal Mankowski<br>
                   <em>Preprint</em>, 2026
-                  <p class="tldr"><b class="tldr-label">TL;DR:</b>&nbsp;Which experiences should an agent learn from? We select post-training data by the agent's own prediction gaps: for SFT, traces whose execution outcomes the agent mispredicts yield 12.8% higher mean reward than random selection; for RL, tasks whose rollout rewards it mispredicts improve final reward by 33.3%, and cheap predicted-reward proxies work without extra verification.</p>
+                  <p class="tldr"><b class="tldr-label">TL;DR:</b>&nbsp;Select post-training data using the agent's own prediction gaps. Mispredicted traces improve SFT reward by 12.8%, while mispredicted rollout rewards improve RL reward by 33.3%; cheap proxies work without extra verification.</p>
                 </td></tr></table>
 
                 <table class="pub" width="100%"><tr>
@@ -96,7 +96,7 @@
                   Chenqian Le, Jiayi Cheng, <strong><u>Qijia He</u></strong>, Runhao Li, Yinghao Li, Xupeng Chen<br>
                   <em>Preprint</em>, 2026
                   [<a href="https://arxiv.org/abs/2609.04518">Paper</a>]
-                  <p class="tldr"><b class="tldr-label">TL;DR:</b>&nbsp;Multi-harness RL for coding agents both trains across several harnesses and compares their rewards inside one GRPO group. Replaying identical Qwen3-8B trajectories from Aider, OpenHands, Qwen Code, and SWE-agent under per-harness vs. cross-harness grouping, we find the evaluation harness moves SWE-bench Verified solve rate by 4.3&times;, while the grouping rule has no detectable effect on an unseen held-out harness.</p>
+                  <p class="tldr"><b class="tldr-label">TL;DR:</b>&nbsp;Multi-harness coding RL gains come from the evaluation harness, not cross-harness reward grouping. On identical Qwen3-8B trajectories, harness choice shifts SWE-bench Verified solve rate by 4.3&times;, while grouping has no effect on an unseen harness.</p>
                 </td></tr></table>
 
                 <table class="pub" width="100%"><tr>
@@ -108,7 +108,7 @@
                   [<a href="https://arxiv.org/abs/2603.24575">Paper</a>]
                   [<a href="https://vfig-proj.github.io/">Project Page</a>]
                   [<a href="https://github.com/RAIVNLab/VFig/tree/main">Code</a>]
-                  <p class="tldr"><b class="tldr-label">TL;DR:</b>&nbsp;VFIG is the first large-scale ecosystem for scientific figure-to-SVG generation, introducing a 66K figure–SVG dataset, a new benchmark, and a family of VLMs trained with SFT+RL that achieve state-of-the-art open-source performance and parity with GPT-5.2.</p>
+                  <p class="tldr"><b class="tldr-label">TL;DR:</b>&nbsp;VFIG introduces a 66K figure&ndash;SVG dataset, a new benchmark, and VLMs trained with SFT+RL that reach state-of-the-art open-source performance and parity with GPT-5.2.</p>
                 </td></tr></table>
 
                 <table class="pub" width="100%"><tr>
@@ -119,7 +119,7 @@
                   <em>Efficient Reasoning @ COLM 2026</em> <span class="award">Spotlight</span>
                   [<a href="https://openreview.net/pdf?id=y8w7HIaLtu">Paper</a>]
                   [<a href="https://github.com/Qijia-He/ARCHER">Code</a>]
-                  <p class="tldr"><b class="tldr-label">TL;DR:</b>&nbsp;When a coding agent fails, should it attempt cheap recovery or escalate to a stronger model? ARCHER casts this as a routing problem over heterogeneous recovery actions trained on execution rollouts, with a conformal risk control layer that adapts to any budget without retraining—exceeding always-escalate solve rates at 35% of its recovery cost.</p>
+                  <p class="tldr"><b class="tldr-label">TL;DR:</b>&nbsp;ARCHER routes failed coding agents among recovery actions and uses conformal risk control to adapt to any budget without retraining. It surpasses always-escalate solve rates at 35% of the recovery cost.</p>
                 </td></tr></table>
 
                 <table class="pub" width="100%"><tr>
@@ -129,7 +129,7 @@
                   Ziang Li, Manasi Ganti, Zixian Ma, Helena Vasconcelos, <strong><u>Qijia He</u></strong>, Ranjay Krishna<br>
                   <em>XLLM-Reason-Plan @ COLM 2025</em> <span class="award">Best Paper Award (Honorable Mention)</span>
                   [<a href="https://www.arxiv.org/abs/2509.11026">Paper</a>]
-                  <p class="tldr"><b class="tldr-label">TL;DR:</b>&nbsp;Large language models (LLMs) generate rationales that improve reasoning and interpretability, but existing evaluations using binary human or LLM preferences are limited and opaque. We introduce an attribute-based evaluation framework that defines key rationale qualities, explains human preferences, and enables more nuanced model comparisons through attribute-specific analysis.</p>
+                  <p class="tldr"><b class="tldr-label">TL;DR:</b>&nbsp;An attribute-based framework evaluates LLM rationales beyond opaque binary preferences. It identifies key rationale qualities, explains human choices, and enables fine-grained model comparisons.</p>
                 </td></tr></table>
 
                 <h4 class="pubcat">Causal Inference</h4>
@@ -142,7 +142,7 @@
                   <em>arxiv</em>, 2026
                   [<a href="https://arxiv.org/abs/2604.06407">Paper</a>]
                   [<a href="https://github.com/Qijia-He/weighted_CVE">Code</a>]
-                  <p class="tldr"><b class="tldr-label">TL;DR:</b>&nbsp;This paper introduces a weighted controlled risk approach to causal mediation analysis, addressing scenarios where traditional fixed-level interventions violate the positivity assumption by targeting subpopulations with a high probability of attaining specific mediator levels.</p>
+                  <p class="tldr"><b class="tldr-label">TL;DR:</b>&nbsp;Weighted controlled effects handle positivity violations in mediation analysis by targeting subpopulations likely to attain each mediator level, replacing infeasible fixed-level interventions.</p>
                 </td></tr></table>
 
                 <table class="pub" width="100%"><tr>
@@ -153,7 +153,7 @@
                   <em>Journal of Causal Inference</em>, 2025
                   [<a href="https://www.degruyterbrill.com/document/doi/10.1515/jci-2023-0020/html?lang=en&srsltid=AfmBOoq6N0kCiMVuNKotXHLNw8oX9l5bqaSA0alHg_yHOxTApwG613Nd">Paper</a>]
                   [<a href="data/suppl_jci-2023-0020_suppl.pdf">Supplement</a>]
-                  <p class="tldr"><b class="tldr-label">TL;DR:</b>&nbsp;We proposed a framework for using placebo samples in observational studies to detect and correct for unmeasured confounding bias. It develops identification assumptions and estimation methods—including regression, weighting, and doubly robust approaches—and validates them through simulations and an applied case study on tax credits and infant health.</p>
+                  <p class="tldr"><b class="tldr-label">TL;DR:</b>&nbsp;Placebo samples can detect and correct unmeasured confounding in observational studies. The framework provides regression, weighting, and doubly robust estimators, validated in simulations and a tax-credit study.</p>
                 </td></tr></table>
 
                 <table class="pub" width="100%"><tr>
@@ -164,7 +164,7 @@
                   <em>Journal of the American Statistical Association</em>, 2024
                   [<a href="https://www.tandfonline.com/doi/full/10.1080/01621459.2024.2360643#abstract">Paper</a>]
                   [<a href="data/uasa_a_2360643_sm6715.pdf">Supplement</a>]
-                  <p class="tldr"><b class="tldr-label">TL;DR:</b>&nbsp;We developed a potential outcomes framework to estimate the ITT effect of an active control versus placebo in active-controlled trials, using historical placebo-controlled data. Our method enables ITT estimation when the placebo arm is unavailable and accounts for unmeasured confounders using instrumental variables.</p>
+                  <p class="tldr"><b class="tldr-label">TL;DR:</b>&nbsp;A potential-outcomes framework estimates the active-control-versus-placebo ITT effect when no placebo arm is available, borrowing historical trials and using instrumental variables to address unmeasured confounding.</p>
                 </td></tr></table>
 
                 <table class="pub" width="100%"><tr>
@@ -175,7 +175,7 @@
                   <em>Statistical Methods in Medical Research</em>, 2024
                   [<a href="https://journals.sagepub.com/doi/10.1177/09622802241262525">Paper</a>]
                   [<a href="https://journals.sagepub.com/doi/suppl/10.1177/09622802241262525/suppl_file/sj-pdf-1-smm-10.1177_09622802241262525.pdf">Supplement</a>]
-                  <p class="tldr"><b class="tldr-label">TL;DR:</b>&nbsp;We introduced a new criterion for individualized treatment rules based on the adjusted probability of longer survival, offering a clear and clinically relevant objective. Our method, optimal adjusted probability learning, constructs the best treatment rule by maximizing this nonparametric survival benefit.</p>
+                  <p class="tldr"><b class="tldr-label">TL;DR:</b>&nbsp;Optimal adjusted probability learning estimates individualized treatment rules by maximizing the adjusted probability of longer survival, yielding a clinically interpretable, nonparametric treatment objective.</p>
                 </td></tr></table>
 
               </td>
